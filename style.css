@@ -1,0 +1,82 @@
+:root {
+  --font-lato: "Lato", sans-serif;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+}
+
+.container .card-1 {
+  background-image: url(./Images/Image-1.jpeg);
+}
+
+.container .card-2 {
+  background-image: url(./Images/Image-2.jpeg);
+}
+
+.container .card-3 {
+  background-image: url(./Images/Image-3.jpeg);
+}
+
+.container .card-4 {
+  background-image: url(./Images/Image-4.jpeg);
+}
+
+.container .card-5 {
+  background-image: url(./Images/Image-5.jpeg);
+}
+
+.container .card-6 {
+  background-image: url(./Images/Image-6.jpeg);
+}
+
+.cards {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: auto 4rem;
+}
+
+.container .cards .card {
+  height: 70vh;
+  border-radius: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* flex: 0.5; */
+  width: 100px;
+  /* align-items: center; */
+  transition: width 0.2s ease;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container .cards .card:hover {
+  width: 500px;
+}
+
+.title {
+  font-family: var(--font-lato);
+  font-size: 30px;
+  color: var(--white);
+  font-weight: bold;
+  opacity: 0;
+}
+
+.card:hover .title {
+  opacity: 1;
+  transition: opacity 2s ease;
+}
